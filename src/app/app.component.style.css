@@ -1,0 +1,12 @@
+.rounded-circle {
+  padding: 20px;
+  margin: auto;
+}
+.logo {
+  width: 100%;
+}
+
+.header{
+  max-width: 150px;
+  max-height:150px;
+}

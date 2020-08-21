@@ -1,0 +1,101 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-3">
+      <div class="text-center">
+        <div class="logo">
+          <img src="https://i.imgur.com/tNC20KB.png" class="rounded-circle p-2 header"  />
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <button
+          class="navbar-toggler d-lg-none ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item mx-2">
+              <button
+                class="nav-item nav-link btn btn-lg btn-block"
+                (click)="landingpage()"
+              >
+                <i class="fa fa-home"></i> Home
+              </button>
+            </li>
+            <li class="nav-item mx-2">
+              <button
+                class="nav-item nav-link btn  btn-lg  btn-block"
+                (click)="placeAppointment()"
+              >
+               <i class="fa fa-book"></i> Place Appointment
+              </button>
+            </li>
+
+            <li class="nav-item mx-2">
+              <button
+                class="nav-item nav-link btn  btn-lg  btn-block"
+                (click)="viewAppointment()"
+              >
+               <i class="fa fa-eye"></i> View Appointment
+              </button>
+            </li>
+
+            <li class="nav-item mx-2">
+              <button
+                class="nav-item nav-link btn  btn-lg  btn-block"
+                (click)="contactUspage()"
+              >
+                <i class="fa fa-phone"></i> Contact Us
+              </button>
+            </li>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="sidebar">
+        <div class="nav navbar-nav">
+          <button
+            class="nav-item nav-link btn btn-block btn-info my-2 my-md-4"
+            (click)="landingpage()"
+          >
+            Home
+          </button>
+          <button
+            class="nav-item nav-link btn btn-block btn-info my-2 my-md-4"
+            (click)="placeAppointment()"
+          >
+            Place Appointment
+          </button>
+          <button
+            class="nav-item nav-link btn btn-block btn-info my-2 my-md-4"
+            (click)="viewAppointment()"
+          >
+            View Appointment
+          </button>
+          <button
+            class="nav-item nav-link btn btn-block btn-info my-2 my-md-4"
+            (click)="contactUspage()"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <hr><router-outlet></router-outlet></div>
+  </div>
+</div>
